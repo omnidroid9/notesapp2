@@ -109,7 +109,7 @@ export default function App() {
             >
               <TextField
                 name="name"
-                placeholder="Note Name"
+                placeholder="Gear Name"
                 label="Gear Name"
                 labelHidden
                 variation="quiet"
@@ -117,7 +117,7 @@ export default function App() {
               />
               <TextField
                 name="description"
-                placeholder="Note Description"
+                placeholder="Gear Description"
                 label="Gear Description"
                 labelHidden
                 variation="quiet"
