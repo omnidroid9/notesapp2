@@ -10,6 +10,7 @@ import {
   Image,
   Grid,
   Divider,
+  ToggleButton,
 } from "@aws-amplify/ui-react";
 import { Amplify } from "aws-amplify";
 import "@aws-amplify/ui-react/styles.css";
@@ -115,6 +116,14 @@ export default function App() {
                 variation="quiet"
                 required
               />
+              <ToggleButton
+                name="type"
+                placeholder="Gear Type"
+                label="Gear Type"
+                labelHidden
+                variation="quiet"
+                required
+              />
               <TextField
                 name="description"
                 placeholder="Gear Description"
@@ -130,7 +139,6 @@ export default function App() {
                 alignSelf={"end"}
                 accept="image/png, image/jpeg"
               />
-
               <Button type="submit" variation="primary">
                 Upload Gear
               </Button>
@@ -172,7 +180,7 @@ export default function App() {
                   variation="destructive"
                   onClick={() => deleteNote(note)}
                 >
-                  Delete note
+                  Delete Gear
                 </Button>
               </Flex>
             ))}
