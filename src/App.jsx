@@ -137,7 +137,7 @@ export default function App() {
             </Flex>
           </View>
           <Divider />
-          <Heading level={2}>Current Gear</Heading>
+          <Heading level={2}>My Closet</Heading>
           <Grid
             margin="3rem 0"
             autoFlow="column"
@@ -172,7 +172,7 @@ export default function App() {
                   variation="destructive"
                   onClick={() => deleteNote(note)}
                 >
-                  Delete note
+                  Delete gear
                 </Button>
               </Flex>
             ))}
