@@ -107,6 +107,8 @@ export default function App() {
               gap="2rem"
               padding="2rem"
             >
+              <figure>
+                <figcaption>Add gear to your closet</figcaption>
               <TextField
                 name="name"
                 placeholder="Gear Name"
@@ -132,8 +134,9 @@ export default function App() {
               />
 
               <Button type="submit" variation="primary">
-                Upload Gear
+                Add Gear
               </Button>
+              </figure>
             </Flex>
           </View>
           <Divider />
