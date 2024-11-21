@@ -107,8 +107,6 @@ export default function App() {
               gap="2rem"
               padding="2rem"
             >
-              <figure>
-                <figcaption>Add gear to your closet</figcaption>
               <TextField
                 name="name"
                 placeholder="Gear Name"
@@ -132,11 +130,9 @@ export default function App() {
                 alignSelf={"end"}
                 accept="image/png, image/jpeg"
               />
-
               <Button type="submit" variation="primary">
                 Add Gear
               </Button>
-              </figure>
             </Flex>
           </View>
           <Divider />
