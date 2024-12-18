@@ -117,8 +117,8 @@ export default function App() {
               />
               <TextField
                 name="description"
-                placeholder="Gear Description (2)"
-                label="Gear Description (2)"
+                placeholder="Gear Description"
+                label="Gear Description"
                 labelHidden
                 variation="quiet"
                 required
