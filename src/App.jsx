@@ -34,7 +34,9 @@ export default function App() {
   }, []);
 
   async function fetchNotes() {
-    const { data: notes } = await client.models.Note.list();
+    const { data: notes } = await client.models.Note.list({
+      filter: {} // Fetch all notes without any filter
+    });
     await Promise.all(
       notes.map(async (note) => {
         if (note.image) {
@@ -136,7 +138,7 @@ export default function App() {
             </Flex>
           </View>
           <Divider />
-          <Heading level={2}>My Closet</Heading>
+          <Heading level={2}>All Gear</Heading>
           <Grid
             margin="3rem 0"
             autoFlow="column"
