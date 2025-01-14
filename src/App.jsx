@@ -60,8 +60,6 @@ export default function App() {
       name: form.get("name"),
       description: form.get("description"),
       image: form.get("image").name,
-      lowTemp: form.get("lowTemp"),
-      highTemp: form.get("highTemp"),   
     });
 
     console.log(newNote);
@@ -125,22 +123,6 @@ export default function App() {
                 variation="quiet"
                 required
               />
-              <TextField
-                name="lowTemp"
-                placeholder="Low Temperature"
-                label="Low Temperature"
-                labelHidden
-                variation="quiet"
-                required
-              />
-              <TextField
-                name="highTemp"
-                placeholder="High Temperature"
-                label="High Temperature"
-                labelHidden
-                variation="quiet"
-                required
-              />
               <View
                 name="image"
                 as="input"
@@ -178,8 +160,6 @@ export default function App() {
                   <Heading level="3">{note.name}</Heading>
                 </View>
                 <Text fontStyle="italic">{note.description}</Text>
-                <Text>Low Temp: {note.lowTemp}</Text>
-                <Text>High Temp: {note.highTemp}</Text>
                 {note.image && (
                   <Image
                     src={note.image}
