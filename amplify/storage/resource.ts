@@ -5,6 +5,7 @@ export const storage = defineStorage({
   access: (allow) => ({
     "media/{entity_id}/*": [
       allow.entity("identity").to(["read", "write", "delete"]),
+      allow.group("Everyone").to(["read"]), // Allow all users to read the images
     ],
   }),
 });
